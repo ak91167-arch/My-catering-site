@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="bn">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,21 +7,72 @@
     <style>
         body { font-family: 'Garamond', serif; margin: 0; background-color: #fff; color: #800000; }
         
-        /* Shahi Bengali Header */
+        /* Shahi Header */
         header { 
-            background-color: #9b1b1b; /* Sindoor Red */
-            padding: 50px 10px;
+            background-color: #9b1b1b; 
+            padding: 40px 10px;
             text-align: center;
-            border-bottom: 10px solid #d4af37; /* Royal Gold */
+            border-bottom: 8px solid #d4af37;
         }
-        header h1 { color: #fdf5e6; font-size: 3rem; margin: 0; letter-spacing: 3px; border-bottom: 2px solid #d4af37; display: inline-block; padding-bottom: 10px; }
-        header p { color: #fdf5e6; font-size: 1.2rem; margin-top: 15px; font-style: italic; }
+        header h1 { color: #fdf5e6; font-size: 2.5rem; margin: 0; text-transform: uppercase; }
+        header p { color: #fdf5e6; font-size: 1.1rem; margin-top: 10px; }
 
-        .cta-btn { background: #d4af37; color: #800000; padding: 15px 40px; text-decoration: none; font-weight: bold; font-size: 1.1rem; border-radius: 0; display: inline-block; margin-top: 20px; border: 2px solid #fff; box-shadow: 5px 5px 0px #4a0000; }
+        .cta-btn { 
+            background: #d4af37; color: #800000; padding: 12px 30px; 
+            text-decoration: none; font-weight: bold; display: inline-block; 
+            margin-top: 15px; border: 2px solid #fff; 
+        }
 
         /* Menu Section */
-        .container { padding: 40px 15px; text-align: center; background: #fffaf0; }
-        .bengali-title { font-size: 2.2rem; border-bottom: 4px double #9b1b1b; display: inline-block; margin-bottom: 40px; padding-bottom: 10px; }
+        .container { padding: 30px 15px; text-align: center; background: #fffaf0; }
+        .bengali-title { font-size: 2rem; border-bottom: 3px solid #9b1b1b; display: inline-block; margin-bottom: 30px; }
 
-        .menu-grid { display: grid; grid-template-columns: 1fr; gap: 30px; max-width:
-            
+        .menu-grid { display: grid; grid-template-columns: 1fr; gap: 25px; max-width: 500px; margin: auto; }
+        
+        .food-item { background: white; border: 2px solid #9b1b1b; padding: 0; box-shadow: 6px 6px 0px #d4af37; overflow: hidden; }
+        .food-item img { width: 100%; height: 250px; object-fit: cover; display: block; }
+        .food-item h3 { margin: 15px 0 5px; font-size: 1.4rem; color: #9b1b1b; }
+        .food-item p { font-style: italic; color: #555; padding-bottom: 15px; margin: 0; }
+
+        footer { background: #1a1a1a; color: #d4af37; padding: 25px; text-align: center; font-size: 0.9rem; }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>ANUKUL CATERING</h1>
+    <p>Authentic Bengali Taste & Royal Service</p>
+    <a href="https://wa.me/919641796197" class="cta-btn">WhatsApp Enquiry</a>
+</header>
+
+<div class="container">
+    <h2 class="bengali-title">Amader Specialties</h2>
+
+    <div class="menu-grid">
+        <div class="food-item">
+            <img src="https://www.archanaskitchen.com/images/archanaskitchen/1-Author/Sudarshana_Dogra/Bhetki_Paturi_Recipe_Bengali_Style_Steamed_Fish_In_Banana_Leaf_1600.jpg" alt="Paturi">
+            <h3>Bhetki Paturi / Ilish</h3>
+            <p>Traditional Bengali fish in banana leaf.</p>
+        </div>
+
+        <div class="food-item">
+            <img src="https://static.toiimg.com/thumb/53192600.cms?width=1200&height=900" alt="Mutton Kosha">
+            <h3>Mutton Kosha & Polao</h3>
+            <p>Royal Bengali slow-cooked mutton curry.</p>
+        </div>
+
+        <div class="food-item">
+            <img src="https://images.unsplash.com/photo-1621361250325-a1318090881c?auto=format&fit=crop&w=800&q=80" alt="Sweets">
+            <h3>Rosogolla & Mishti Doi</h3>
+            <p>Traditional sweets of Bengal.</p>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <p>Contact: +91 96417 96197</p>
+    <p>&copy; 2026 Anukul Catering | Kolkata | Siliguri</p>
+</footer>
+
+</body>
+</html>
