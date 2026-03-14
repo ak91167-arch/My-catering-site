@@ -5,72 +5,60 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Anukul Catering | Shandaar Bengali Bhoj</title>
     <style>
-        /* Traditional Bengali Color Palette */
-        body { font-family: 'Georgia', serif; margin: 0; padding: 0; text-align: center; background-color: #fffaf0; color: #4a0e0e; }
+        body { font-family: 'Times New Roman', serif; margin: 0; padding: 0; text-align: center; background-color: #fffaf0; color: #800000; }
         
-        /* Hero Section with a Bengali Touch */
-        .hero { 
-            background: linear-gradient(rgba(74, 14, 14, 0.7), rgba(74, 14, 14, 0.7)), 
-                        url('https://images.unsplash.com/photo-1626132647523-66f5bf380027?w=1200'); /* Traditional Plate */
-            background-size: cover; background-position: center;
-            padding: 100px 20px; color: #f4d03f; /* Golden Text */
+        /* Header with Traditional Border Look */
+        header { 
+            background-color: #b03a2e; /* Deep Red */
+            background-image: linear-gradient(45deg, #800000 25%, transparent 25%);
+            background-size: 4px 4px;
+            padding: 60px 20px; color: #f4d03f; 
+            border-bottom: 8px solid #f4d03f; /* Golden Border */
         }
-        .hero h1 { font-size: 3rem; margin: 0; font-weight: bold; text-shadow: 2px 2px 4px rgba(0,0,0,0.5); }
-        .hero p { font-size: 1.4rem; color: #fff; }
+        h1 { font-size: 3rem; margin: 0; text-transform: uppercase; letter-spacing: 2px; }
+
+        .btn { background: #f4d03f; color: #800000; padding: 15px 30px; text-decoration: none; border-radius: 2px; font-weight: bold; display: inline-block; margin-top: 20px; border: 2px solid #800000; }
+
+        /* Menu Section */
+        .menu-title { margin-top: 40px; color: #800000; font-size: 2.2rem; font-weight: bold; text-decoration: underline; }
         
-        .btn { background: #b03a2e; color: white; padding: 15px 35px; text-decoration: none; border-radius: 5px; font-weight: bold; display: inline-block; margin-top: 25px; border: 2px solid #f4d03f; transition: 0.3s; }
-        .btn:hover { background: #f4d03f; color: #b03a2e; }
+        .gallery { display: flex; flex-direction: column; align-items: center; padding: 20px; gap: 30px; }
+        
+        .food-card { 
+            background: white; width: 90%; max-width: 500px; 
+            border: 3px solid #b03a2e; border-radius: 0; /* Traditional Sharp Look */
+            box-shadow: 10px 10px 0px #f4d03f; overflow: hidden;
+        }
+        .food-card img { width: 100%; height: 250px; object-fit: cover; border-bottom: 3px solid #b03a2e; }
+        .food-card h3 { margin: 15px 0 5px; font-size: 1.5rem; color: #800000; }
+        .food-card p { margin-bottom: 15px; font-style: italic; color: #444; }
 
-        .section-title { margin-top: 50px; color: #b03a2e; font-size: 2rem; border-bottom: 3px double #b03a2e; display: inline-block; padding-bottom: 10px; font-weight: bold; }
-
-        /* Bengali Menu Gallery */
-        .gallery { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 25px; padding: 30px; max-width: 1100px; margin: auto; }
-        .gallery-item { background: white; border: 1px solid #e5e8e8; border-radius: 5px; overflow: hidden; box-shadow: 0 5px 15px rgba(0,0,0,0.1); }
-        .gallery-item img { width: 100%; height: 220px; object-fit: cover; }
-        .gallery-item h3 { padding: 15px 10px 5px 10px; margin: 0; color: #b03a2e; }
-        .gallery-item p { padding: 0 10px 15px 10px; font-style: italic; color: #666; font-size: 0.9rem; }
-
-        .footer { padding: 50px; background: #4a0e0e; color: #f4d03f; margin-top: 50px; }
+        footer { background: #333; color: #f4d03f; padding: 30px; margin-top: 50px; }
     </style>
 </head>
 <body>
 
-<div class="hero">
-    <h1>Anukul Catering</h1>
-    <p>Authentic Bengali Taste & Royal Service</p>
-    <a href="https://wa.me/919641796197?text=Hi, I want to book Bengali Catering" class="btn">Enquire for Your Event</a>
-</div>
+<header>
+    <h1>ANUKUL CATERING</h1>
+    <p style="color: white; font-size: 1.2rem;">Authentic Bengali Bhoj & Royal Hospitality</p>
+    <a href="https://wa.me/919641796197" class="btn">BOOK YOUR EVENT</a>
+</header>
 
-<h2 class="section-title">Amader Speciality (Hamari Menu)</h2>
+<h2 class="menu-title">Amader Speciality</h2>
 
 <div class="gallery">
-    <div class="gallery-item">
-        <img src="https://images.unsplash.com/photo-1630406144797-021de6700623?w=500" alt="Luchi Cholar Dal">
-        <h3>Luchi & Cholar Dal</h3>
-        <p>Classic Bengali breakfast & starter.</p>
+    <div class="food-card">
+        <img src="https://images.unsplash.com/photo-1630406144797-021de6700623?auto=format&fit=crop&w=600&q=80" alt="Luchi">
+        <h3>Gorom Luchi & Alur Dom</h3>
+        <p>The perfect start to a Bengali feast.</p>
     </div>
-    <div class="gallery-item">
-        <img src="https://images.unsplash.com/photo-1589301760014-d929f3979dbc?w=500" alt="Fish Curry">
-        <h3>Shorshe Ilish / Bhetki Paturi</h3>
-        <p>The soul of every Bengali celebration.</p>
-    </div>
-    <div class="gallery-item">
-        <img src="https://images.unsplash.com/photo-1542367592-8849eb950fd8?w=500" alt="Mutton Kosha">
-        <h3>Mutton Kosha & Polao</h3>
-        <p>Rich, spicy and slow-cooked to perfection.</p>
-    </div>
-    <div class="gallery-item">
-        <img src="https://images.unsplash.com/photo-1621361250325-a1318090881c?w=500" alt="Rosogolla">
-        <h3>Rosogolla & Mishti Doi</h3>
-        <p>Traditional sweets for a sweet ending.</p>
-    </div>
-</div>
 
-<div class="footer">
-    <p>Call Us: +91 96417 96197</p>
-    <p>Kolkata | Siliguri | Rest of Bengal</p>
-    <p>&copy; 2026 Anukul Catering. Khub Bhalo Khabar!</p>
-</div>
+    <div class="food-card">
+        <img src="https://images.unsplash.com/photo-1626132647523-66f5bf380027?auto=format&fit=crop&w=600&q=80" alt="Fish">
+        <h3>Bhetki Paturi / Shorshe Ilish</h3>
+        <p>Authentic taste wrapped in banana leaf.</p>
+    </div>
 
-</body>
-</html>
+    <div class="food-card">
+        <img src="
+            
