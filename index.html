@@ -1,67 +1,75 @@
 <!DOCTYPE html>
-<html lang="hi">
+<html lang="bn">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Anukul Catering | Swadisht Khana</title>
+    <title>Anukul Catering | Shandaar Bengali Bhoj</title>
     <style>
-        body { font-family: 'Arial', sans-serif; margin: 0; padding: 0; text-align: center; background-color: #fffaf5; color: #333; }
+        /* Traditional Bengali Color Palette */
+        body { font-family: 'Georgia', serif; margin: 0; padding: 0; text-align: center; background-color: #fffaf0; color: #4a0e0e; }
         
-        /* Top Banner with Background Image */
+        /* Hero Section with a Bengali Touch */
         .hero { 
-            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
-                        url('https://images.unsplash.com/photo-1555244162-803834f70033?w=1200');
+            background: linear-gradient(rgba(74, 14, 14, 0.7), rgba(74, 14, 14, 0.7)), 
+                        url('https://images.unsplash.com/photo-1626132647523-66f5bf380027?w=1200'); /* Traditional Plate */
             background-size: cover; background-position: center;
-            padding: 80px 20px; color: white;
+            padding: 100px 20px; color: #f4d03f; /* Golden Text */
         }
-        .hero h1 { font-size: 2.8rem; margin: 0; }
+        .hero h1 { font-size: 3rem; margin: 0; font-weight: bold; text-shadow: 2px 2px 4px rgba(0,0,0,0.5); }
+        .hero p { font-size: 1.4rem; color: #fff; }
         
-        .btn { background: #25d366; color: white; padding: 15px 30px; text-decoration: none; border-radius: 50px; font-weight: bold; display: inline-block; margin-top: 20px; box-shadow: 0 4px 10px rgba(0,0,0,0.2); }
+        .btn { background: #b03a2e; color: white; padding: 15px 35px; text-decoration: none; border-radius: 5px; font-weight: bold; display: inline-block; margin-top: 25px; border: 2px solid #f4d03f; transition: 0.3s; }
+        .btn:hover { background: #f4d03f; color: #b03a2e; }
 
-        .section-title { margin-top: 40px; color: #d35400; font-size: 1.8rem; border-bottom: 2px solid #d35400; display: inline-block; padding-bottom: 5px; }
+        .section-title { margin-top: 50px; color: #b03a2e; font-size: 2rem; border-bottom: 3px double #b03a2e; display: inline-block; padding-bottom: 10px; font-weight: bold; }
 
-        /* Photo Gallery Grid */
-        .gallery { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; padding: 20px; max-width: 1000px; margin: auto; }
-        .gallery-item { background: white; border-radius: 10px; overflow: hidden; box-shadow: 0 4px 8px rgba(0,0,0,0.1); }
-        .gallery-item img { width: 100%; height: 200px; object-fit: cover; transition: 0.3s; }
-        .gallery-item img:hover { transform: scale(1.05); }
-        .gallery-item p { padding: 10px; font-weight: bold; margin: 0; }
+        /* Bengali Menu Gallery */
+        .gallery { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 25px; padding: 30px; max-width: 1100px; margin: auto; }
+        .gallery-item { background: white; border: 1px solid #e5e8e8; border-radius: 5px; overflow: hidden; box-shadow: 0 5px 15px rgba(0,0,0,0.1); }
+        .gallery-item img { width: 100%; height: 220px; object-fit: cover; }
+        .gallery-item h3 { padding: 15px 10px 5px 10px; margin: 0; color: #b03a2e; }
+        .gallery-item p { padding: 0 10px 15px 10px; font-style: italic; color: #666; font-size: 0.9rem; }
 
-        .footer { padding: 40px; color: #888; font-size: 0.9rem; }
+        .footer { padding: 50px; background: #4a0e0e; color: #f4d03f; margin-top: 50px; }
     </style>
 </head>
 <body>
 
 <div class="hero">
     <h1>Anukul Catering</h1>
-    <p>Best Quality Food for Weddings & Parties</p>
-    <a href="https://wa.me/91919641796197?text=Hi, I want to enquire about catering" class="btn">WhatsApp par Order Karein</a>
+    <p>Authentic Bengali Taste & Royal Service</p>
+    <a href="https://wa.me/919641796197?text=Hi, I want to book Bengali Catering" class="btn">Enquire for Your Event</a>
 </div>
 
-<h2 class="section-title">Hamari Specialities</h2>
+<h2 class="section-title">Amader Speciality (Hamari Menu)</h2>
 
 <div class="gallery">
     <div class="gallery-item">
-        <img src="https://images.unsplash.com/photo-1631452180519-c014fe946bc7?w=500" alt="Paneer">
-        <p>Shahi Paneer & Malai Kofta</p>
+        <img src="https://images.unsplash.com/photo-1630406144797-021de6700623?w=500" alt="Luchi Cholar Dal">
+        <h3>Luchi & Cholar Dal</h3>
+        <p>Classic Bengali breakfast & starter.</p>
     </div>
     <div class="gallery-item">
-        <img src="https://images.unsplash.com/photo-1546833999-b9f581a1996d?w=500" alt="Dal">
-        <p>Dal Makhani & Mix Veg</p>
+        <img src="https://images.unsplash.com/photo-1589301760014-d929f3979dbc?w=500" alt="Fish Curry">
+        <h3>Shorshe Ilish / Bhetki Paturi</h3>
+        <p>The soul of every Bengali celebration.</p>
     </div>
     <div class="gallery-item">
-        <img src="https://images.unsplash.com/photo-1589302168068-964664d93dc0?w=500" alt="Biryani">
-        <p>Veg/Non-Veg Biryani</p>
+        <img src="https://images.unsplash.com/photo-1542367592-8849eb950fd8?w=500" alt="Mutton Kosha">
+        <h3>Mutton Kosha & Polao</h3>
+        <p>Rich, spicy and slow-cooked to perfection.</p>
     </div>
     <div class="gallery-item">
-        <img src="https://images.unsplash.com/photo-1567103472667-6898f3a7bca8?w=500" alt="Sweets">
-        <p>Gulab Jamun & Jalebi</p>
+        <img src="https://images.unsplash.com/photo-1621361250325-a1318090881c?w=500" alt="Rosogolla">
+        <h3>Rosogolla & Mishti Doi</h3>
+        <p>Traditional sweets for a sweet ending.</p>
     </div>
 </div>
 
 <div class="footer">
-    <p>Contact: +91 96417 96197</p>
-    <p>&copy; 2026 Anukul Catering. All Rights Reserved.</p>
+    <p>Call Us: +91 96417 96197</p>
+    <p>Kolkata | Siliguri | Rest of Bengal</p>
+    <p>&copy; 2026 Anukul Catering. Khub Bhalo Khabar!</p>
 </div>
 
 </body>
