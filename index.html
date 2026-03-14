@@ -3,77 +3,66 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Anukul Catering | Premium Events & Flavors</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <title>Anukul Catering | Swadisht Khana</title>
     <style>
-        :root { --primary: #e67e22; --dark: #2c3e50; }
-        body { font-family: 'Segoe UI', Roboto, sans-serif; margin: 0; color: #333; background: #fdfcfb; }
+        body { font-family: 'Arial', sans-serif; margin: 0; padding: 0; text-align: center; background-color: #fffaf5; color: #333; }
         
-        /* Hero Section */
+        /* Top Banner with Background Image */
         .hero { 
-            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), 
-                        url('https://images.unsplash.com/photo-1555244162-803834f70033?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
+                        url('https://images.unsplash.com/photo-1555244162-803834f70033?w=1200');
             background-size: cover; background-position: center;
-            height: 80vh; display: flex; flex-direction: column; 
-            justify-content: center; align-items: center; color: white; text-align: center; padding: 0 20px;
+            padding: 80px 20px; color: white;
         }
-        .hero h1 { font-size: 3.5rem; margin-bottom: 10px; text-transform: uppercase; letter-spacing: 2px; }
-        .hero p { font-size: 1.2rem; font-style: italic; opacity: 0.9; }
+        .hero h1 { font-size: 2.8rem; margin: 0; }
+        
+        .btn { background: #25d366; color: white; padding: 15px 30px; text-decoration: none; border-radius: 50px; font-weight: bold; display: inline-block; margin-top: 20px; box-shadow: 0 4px 10px rgba(0,0,0,0.2); }
 
-        /* Services */
-        .section { padding: 60px 20px; max-width: 1100px; margin: auto; text-align: center; }
-        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; margin-top: 40px; }
-        .card { background: white; padding: 30px; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.05); border-bottom: 4px solid var(--primary); transition: 0.3s; }
-        .card:hover { transform: translateY(-10px); }
-        .card i { font-size: 3rem; color: var(--primary); margin-bottom: 15px; }
+        .section-title { margin-top: 40px; color: #d35400; font-size: 1.8rem; border-bottom: 2px solid #d35400; display: inline-block; padding-bottom: 5px; }
 
-        /* CTA Button */
-        .btn-wa { 
-            display: inline-block; background: #25d366; color: white; padding: 18px 35px; 
-            border-radius: 50px; text-decoration: none; font-size: 1.2rem; font-weight: bold;
-            box-shadow: 0 5px 15px rgba(37, 211, 102, 0.4); margin-top: 30px; transition: 0.3s;
-        }
-        .btn-wa:hover { transform: scale(1.05); background: #128c7e; }
+        /* Photo Gallery Grid */
+        .gallery { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; padding: 20px; max-width: 1000px; margin: auto; }
+        .gallery-item { background: white; border-radius: 10px; overflow: hidden; box-shadow: 0 4px 8px rgba(0,0,0,0.1); }
+        .gallery-item img { width: 100%; height: 200px; object-fit: cover; transition: 0.3s; }
+        .gallery-item img:hover { transform: scale(1.05); }
+        .gallery-item p { padding: 10px; font-weight: bold; margin: 0; }
 
-        footer { background: var(--dark); color: white; padding: 40px 20px; margin-top: 50px; }
+        .footer { padding: 40px; color: #888; font-size: 0.9rem; }
     </style>
 </head>
 <body>
 
 <div class="hero">
     <h1>Anukul Catering</h1>
-    <p>"Swaad jo dil jeet le, Service jo rishta banaye"</p>
-    <a href="https://wa.me/91919641796197" class="btn-wa">
-        <i class="fab fa-whatsapp"></i> WhatsApp par Enquiry Karein
-    </a>
+    <p>Best Quality Food for Weddings & Parties</p>
+    <a href="https://wa.me/91919641796197?text=Hi, I want to enquire about catering" class="btn">WhatsApp par Order Karein</a>
 </div>
 
-<div class="section">
-    <h2>Hamari Shandaar Services</h2>
-    <div class="grid">
-        <div class="card">
-            <i class="fas fa-utensils"></i>
-            <h3>Royal Wedding Menu</h3>
-            <p>Traditional aur International cuisines ka behtareen sangam.</p>
-        </div>
-        <div class="card">
-            <i class="fas fa-birthday-cake"></i>
-            <h3>Corporate & Small Parties</h3>
-            <p>Aapki meetings aur birthdays ke liye customized mini-buffets.</p>
-        </div>
-        <div class="card">
-            <i class="fas fa-truck"></i>
-            <h3>Outdoor Catering</h3>
-            <p>Kahin bhi, kabhi bhi—garma garam aur taaza khana aapke darwaaze par.</p>
-        </div>
+<h2 class="section-title">Hamari Specialities</h2>
+
+<div class="gallery">
+    <div class="gallery-item">
+        <img src="https://images.unsplash.com/photo-1631452180519-c014fe946bc7?w=500" alt="Paneer">
+        <p>Shahi Paneer & Malai Kofta</p>
+    </div>
+    <div class="gallery-item">
+        <img src="https://images.unsplash.com/photo-1546833999-b9f581a1996d?w=500" alt="Dal">
+        <p>Dal Makhani & Mix Veg</p>
+    </div>
+    <div class="gallery-item">
+        <img src="https://images.unsplash.com/photo-1589302168068-964664d93dc0?w=500" alt="Biryani">
+        <p>Veg/Non-Veg Biryani</p>
+    </div>
+    <div class="gallery-item">
+        <img src="https://images.unsplash.com/photo-1567103472667-6898f3a7bca8?w=500" alt="Sweets">
+        <p>Gulab Jamun & Jalebi</p>
     </div>
 </div>
 
-<footer>
-    <p><strong>Contact:</strong> +91 96417 96197</p>
-    <p>&copy; 2026 Anukul Catering. Har avsar ki shaan.</p>
-</footer>
+<div class="footer">
+    <p>Contact: +91 96417 96197</p>
+    <p>&copy; 2026 Anukul Catering. All Rights Reserved.</p>
+</div>
 
 </body>
 </html>
-
